@@ -60,14 +60,14 @@ developing your own process.
 
 ## Your Notes Here
 
-- Add a new toy when the toy form is submitted
+## - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+How I debugged: - Clicked add toy to initiate create - Checked console -> 500 internal server error - Checked network tab in dev tools for details -> Name Error - Checked rails server terminal -> error on line 10 in create method - Changed 'Toys.create' to 'Toy.create'
 
-- Update the number of likes for a toy
+## - Update the number of likes for a toy
 
-  - How I debugged:
+How I debugged: - Clicked like button to intiate update - Read error 'Unexpected end of JSON input' that popped up on screen - Checked controller update method to ensure I was rendering json. This code wasn't there so I added 'render json: toy'
 
-- Donate a toy to Goodwill (and delete it from our database)
+## - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+How I debugged: - Clicked donate to goodwill button to initiate delete - Checked network tab. Error: 404 Not found 'ActionController::RoutingError: No route matches' - Added destroy to resources in routes.rb file
